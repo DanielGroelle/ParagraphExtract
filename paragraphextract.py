@@ -19,6 +19,7 @@ for text in texts:
 
     outputfile = open("./texts/processed/" + author + " - " + title + ".csv", "w", encoding="utf-8", newline='')
     writer = csv.writer(outputfile)
+    writer.writerow([author, title])
 
     file = open("./texts/" + text.name, encoding="utf-8")
 
