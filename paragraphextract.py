@@ -39,7 +39,7 @@ def read_file(text):
 
 def split_long_lines(line: str):
   # split on punctuation while preserving the punctuation
-  punctuation_separators = re.compile("([\.!?]\"?)")
+  punctuation_separators = re.compile("((?<!Mr)(?<!Mrs)(?<!Ms)(?<!Jr)(?<!Sr)[\.!?]\"?)")
   split_lines = re.split(punctuation_separators, line)
 
   # find punctuation in split_lines, and concat with the previous sentence
