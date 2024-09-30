@@ -19,8 +19,8 @@ def read_file(text):
   file = open("./texts/" + text.name, encoding="utf-8")
   lines = file.readlines()
   for line in lines:
-    # filter out newlines, replace emdashes with regular dashes, and replace alternate quotations with straight digital quotations
-    line = line.replace("\n", "").replace("—", "-").replace("–", "-").replace("‘", "'").replace("’", "'").replace("“", '"').replace("”", '"').replace("«", '"').replace("»", '"').replace("„", '"')
+    # filter out newlines, replace emdashes with regular dashes, replace alternate quotations with straight digital quotations, and expand single character ellipses
+    line = line.replace("\n", "").replace("—", "-").replace("–", "-").replace("‘", "'").replace("’", "'").replace("“", '"').replace("”", '"').replace("«", '"').replace("»", '"').replace("„", '"').replace("…", "...")
     line = line.strip()
 
     # make sure line starts on a valid uppercase character
