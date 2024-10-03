@@ -39,6 +39,7 @@ def read_file(text):
 
 def split_long_lines(line: str):
   # split on punctuation while preserving the punctuation
+  # ignore punctuation from titles such as Mr. Mrs. etc
   punctuation_separators = re.compile("((?<!Mr)(?<!Mrs)(?<!Ms)(?<!Jr)(?<!Sr)[\.!?]\"?)")
   split_lines = re.split(punctuation_separators, line)
 

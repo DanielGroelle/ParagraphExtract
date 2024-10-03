@@ -2,7 +2,7 @@
 
 # About
 
-This Paragraph Extraction Tool was primarily written to automate adding paragraphs to [TypingJerboa](https://github.com/DanielGroelle/TypingJerboa). Simply drag in pieces of text, and run the script in order to get paragraphs that can be automatically imported into TypingJerboa for the purpose of testing a users typing skills.
+This Paragraph Extraction Tool is a utility program created to automate adding paragraphs to [TypingJerboa](https://github.com/DanielGroelle/TypingJerboa). Simply drag in pieces of text, and run the script in order to get paragraphs that can be automatically imported into TypingJerboa for the purpose of testing a users typing skills.
 
 # Setup
 
